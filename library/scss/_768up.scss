@@ -1,0 +1,187 @@
+/******************************************************************
+Site Name: Denise Doucet Strategic Partnerships Inc.
+Author: sarah semark
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	border-bottom-width: 2px;
+		
+	h1, h2 {
+		padding: 10px 0;
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	h1 {
+		width: 58%;
+		border-right-width: 2px;
+		padding-right: 10px;
+				
+		a:hover {
+			color: darken($pale-blue, 25%);
+		}
+		
+	}
+	
+	h2 {
+		width: 42%;
+		padding-left: 10px;
+		
+		a:hover {
+				color: lighten($light-blue, 25%);
+		}
+	}
+}
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+	float: left;
+	width: 100%;
+	position: absolute;
+	top: 110px;
+	
+	img {
+		display: block;
+		float: left;
+		max-width: 30.4917%;
+		margin: -130px 0 130px 0;
+		@include box-shadow;
+		border: 8px solid lighten($pale-blue, 15%);
+	}	
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.nav {
+	float: left;
+	margin: -1.5em 0 0 1.76243%;
+	width: 62.7459%;
+	
+	li {
+		display: inline-block;
+		float: left;
+		width: 31%;
+		margin-right: 2%;
+		
+		&:nth-of-type(odd) a {
+			margin-left: 2.5%;
+		}
+		&:nth-of-type(even) a {
+			margin-right: 2%;
+		}
+		
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+		
+		a {
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			
+			&:hover, &:focus {
+				background-color: lighten($dark-slate, 30%);
+				color: lighten($pale-blue, 5%);
+			}
+		}
+
+	}
+
+} 
+
+
+
+/*********************
+QUOTATION STYLES
+*********************/
+
+blockquote {
+	margin: 1em 3em;
+}
+
+blockquote + p cite { 
+	margin-right: 3em;
+}
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#main {
+	float: right;
+	width: 100%;
+} 
+
+@media only screen and (max-width: 1030px) and (min-width: 810px) {
+	#main {
+		margin-top: 6em;
+	}
+}
+
+.hentry {
+
+	header {
+		margin: 8em 0 4em;
+		
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+
+}
+
+#full-shot {
+	display: block;
+}
+#headshot {
+	display: none;
+}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+
+.footer {
+	clear: both;
+	margin-top: 3em;
+}
+
