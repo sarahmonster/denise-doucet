@@ -184,7 +184,7 @@ function add_title_spans($content) {
 add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
 
 function my_deregister_styles() {
-    $handles = array('quotescollection-style', 'grunion.css');
+    $handles = array('quotescollection', 'grunion.css');
 
     foreach($handles as $handle){
         wp_deregister_style($handle);
